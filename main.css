@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,700;0,900;1,500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: white;
+}
+h1 {
+    margin-top:20px ;
+    margin-bottom:20px;
+	font-family: "noto sans regular";
+    font-size: 16px;
+	color:#121111;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+h2 {
+    margin-top:60px ;
+    margin-bottom:60px ;
+	font-family: "noto sans black";
+    border-left: solid #DFDFDF 6px;
+    padding-left: 10px;
+    border-radius: 5px;
+    line-height: 40px;
+    width: 20%;
+    margin-left: 6%;
+    font-size: 40px;
+	color: #DFDFDF;
+}
+p { 
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left:20px ;
+    margin-right:20px ;
+    font-family: noto sans light ;
+    font-size: 11px;
+	color:#121111;
+    padding-inline: 2rem;
+    padding-bottom: 3rem;
+}
+.nav_bar {
+    display: flex;
+    height: 70px;
+    background-color: #090A0C;
+}
+.nav_bar-logo {
+    flex-grow: 10;
+} 
+.nav_bar-icon {
+    flex-grow: 2;
+    justify-content: center;
+} 
+.flex_centered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#nav_bar-logo {
+    width: 116px;
+}
+#nav_bar-icon {
+    width: 23px;
+}
+.hero {
+    background-image: url("img/hero_background.png");
+    height: 416px;
+    object-fit: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#hero-header {
+    width: 236px;
+}
+.main_content-nosotros-description {
+
+    flex-direction: column;
+    text-align: center;
+}
+
+.main_content-nosotros-socios-logos {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_content-hero2 {
+    background-image: url("img/hero2_background.png");
+    height: 416px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+
+}
+.main_content-hero2>img{
+  margin-left: 30%;
+}
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.carrusel {
+    display: grid;
+    grid-template-areas: 
+    " main main seco "
+    " main main thir "
+    " fort five five";
+    grid-gap: 5px;
+}
+#img1 {
+    grid-area: main;
+    
+}
+#img2 {
+    grid-area: seco;
+}
+#img3 {
+    grid-area: thir;
+}
+#img4 {
+    grid-area: fort;
+}
+#img5 {
+    grid-area: five;
+}
+.main_content-nosotros {
+    margin-top: 60px;
+}
+.imag1 {
+    position: relative;
+}
+h3 {
+    margin-top:20px ;
+    margin-bottom:20px;
+	font-family: "noto sans black";
+    font-size: 40px;
+	color:white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.imag1>h3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+.footer-chars-dropdown {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+.footer-chars-dropdown button{
+   background-color: white;
+   color:#090A0C;
+   border-style: none;
+   font-family: "noto sans regular";
+    font-size: 40px;
+}
+.main_content-nosotros-socios-logos {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-left:25px ;
+    margin-right:25px;
+}
+
+.main_content-explora{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-left:25px ;
+    margin-right:25px;
+}
+
+.nav_bar-list {
+    position: absolute; 
+    right: 0px;
+    top: 0px;
+    width: 200px;
+    height: 221px;
+    background: rgba(0, 0, 0, 1); 
+    border-radius: 20px;
+    stroke: #DFDFDF; 
+    padding: 1rem;
+    font-size: 10px;
+}
+
+li {
+    text-decoration: none;
+    float: left; 
+    clear: both;
+}
+a {
+    text-decoration: none;
+    float: left; 
+    clear: both;
+    color: aliceblue;
+    font-family: "noto sans";
+}
+
+ul {
+    overflow: hidden; 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 677px) {
+.hero{
+    height: 800px;
+    }
+}
+@media only screen and (min-width: 1215px) {
+    .hero{
+        height: 1100px;
+        margin-top: -10%;
+        }
+        #hero-header {
+            width: 236px;
+            margin-left: -400px;
+        }
+    }
+    .carrusel{
+       padding: 1rem;
+    }
+    .footer-chars-dropdown{
+        margin: 20px;
+    }
+
+    .footer-media{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-media>img{
+        width: 40%;
+        margin-left: 30%;
+        margin-bottom: 20px;
+    }
